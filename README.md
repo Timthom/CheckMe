@@ -1,5 +1,9 @@
 # CheckMe
 
+![Startsida](Startsida.png) 
+![Kategorisida](Kategorisida.png)
+
+
 När ni tankat hem projektet så i treminalen kör ni:
 - `pod install`  
 - [För doc](https://guides.cocoapods.org/using/pod-install-vs-update.html)
