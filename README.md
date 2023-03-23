@@ -1,7 +1,6 @@
 # CheckMe
 
-![Startsida](Startsida.png) 
-![Kategorisida](Kategorisida.png)
+
 
 
 När ni tankat hem projektet så i treminalen kör ni:
@@ -16,3 +15,6 @@ När ni tankat hem projektet så i treminalen kör ni:
 - [Installera Homebrew](https://brew.sh) OBS! Ej om ni redan har Homebrew
 - När det är färdigt kör ni detta:
 - `brew install cocoapods`
+
+![Startsida](Startsida.png) 
+![Kategorisida](Kategorisida.png)
