@@ -56,6 +56,13 @@ class TodoListViewController: SwipeTableViewController {
             let formatter1 = DateFormatter()
             formatter1.dateFormat = "HH:mm E, d MMM y"
             cell.textLabel?.text = formatter1.string(from: today!) + "\r\n" + item.title
+            
+            if #available(iOS 14.0, *) {
+                var cellContex = cell.defaultContentConfiguration()
+                cellContex.text = formatter1.string(from: today!) + "\r\n" + item.title
+            }
+            
+         
             if let colour = UIColor(hexString: selectedCategory!.colour)?.darken(byPercentage: CGFloat(indexPath.row) / CGFloat(toDoItems!.count) / 4/*Ändra detta siffervärde för mer eller mindre färgändring på tableviewcellernas bakgrund*/) {
                 cell.backgroundColor = colour
                 cell.textLabel?.numberOfLines = 0
