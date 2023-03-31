@@ -25,10 +25,16 @@ class TodoListViewController: SwipeTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.separatorStyle = .none
+        searchBar.searchTextField.textColor = .white
+
+        
     }
+
     
     override func viewWillAppear(_ animated: Bool) {
-        
+        searchBar.searchTextField.leftView?.tintColor = .white
+      
+         searchBar.searchTextField.attributedPlaceholder = NSAttributedString(string: "Search item!", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         if let colourHex = selectedCategory?.colour {
             title = selectedCategory!.name
             guard let navBar = navigationController?.navigationBar else { fatalError("Navigation controller does not exist.")
